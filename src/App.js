@@ -21,9 +21,11 @@ import {
   SiMicrosoftazure,
   SiPowerbi, 
   SiTableau,
-  SiWasmcloud, SiSqlite
+  SiWasmcloud, SiSqlite,
+  SiDjango
 } from 'react-icons/si';
 
+// Updated techIcons without missing icons
 // Updated techIcons without missing icons
 const techIcons = {
   'React.js': { icon: <FaReact className="w-5 h-5" />, color: 'text-blue-400', title: 'React.js' },
@@ -35,7 +37,9 @@ const techIcons = {
   'TypeScript': { icon: <SiTypescript className="w-5 h-5" />, color: 'text-blue-500', title: 'TypeScript' },
   'Socket.io': { icon: <SiSocketdotio className="w-5 h-5" />, color: 'text-gray-300', title: 'Socket.io' },
   'MySQL': { icon: <SiMysql className="w-5 h-5" />, color: 'text-blue-300', title: 'MySQL' },
+  'PostgreSQL': { icon: <SiMysql className="w-5 h-5" />, color: 'text-blue-400', title: 'PostgreSQL' },
   'C++': { icon: <SiCplusplus className="w-5 h-5" />, color: 'text-blue-500', title: 'C++' },
+  'C#': { icon: <SiDotnet className="w-5 h-5" />, color: 'text-purple-600', title: 'C#' },
   'JavaScript': { icon: <SiJavascript className="w-5 h-5" />, color: 'text-yellow-400', title: 'JavaScript' },
   'Python': { icon: <SiPython className="w-5 h-5" />, color: 'text-blue-300', title: 'Python' },
   'HTML': { icon: <FaHtml5 className="w-5 h-5" />, color: 'text-orange-500', title: 'HTML' },
@@ -47,11 +51,18 @@ const techIcons = {
   'Linux': { icon: <FaLinux className="w-5 h-5" />, color: 'text-yellow-200', title: 'Linux' },
   'Git': { icon: <FaGitAlt className="w-5 h-5" />, color: 'text-orange-500', title: 'Git' },
   'Tableau': { icon: <SiTableau className="w-5 h-5" />, color: 'text-blue-500', title: 'Tableau' },
+  'Power BI': { icon: <Database className="w-5 h-5" />, color: 'text-yellow-500', title: 'Power BI' },
   'Hugging Face': { icon: <SiHuggingface className="w-5 h-5" />, color: 'text-yellow-400', title: 'Hugging Face' },
   'Vercel': { icon: <SiVercel className="w-5 h-5" />, color: 'text-white', title: 'Vercel' },
   'Razorpay': { icon: <SiRazorpay className="w-5 h-5" />, color: 'text-blue-500', title: 'Razorpay' },
-  'AWS': { icon: <SiWasmcloud className="w-5 h-5" />, color: 'text-orange-400', title: 'AWS' },
+  'AWS-S3': { icon: <SiWasmcloud className="w-5 h-5" />, color: 'text-orange-400', title: 'AWS-S3' },
   'SQL': { icon: <SiSqlite className="w-5 h-5" />, color: 'text-blue-400', title: 'SQL' },
+  'Redux': { icon: <FaReact className="w-5 h-5" />, color: 'text-purple-500', title: 'Redux' },
+  'Go': { icon: <Code className="w-5 h-5" />, color: 'text-blue-300', title: 'Go' },
+  'Redis': { icon: <Database className="w-5 h-5" />, color: 'text-red-500', title: 'Redis' },
+  'REST API': { icon: <Server className="w-5 h-5" />, color: 'text-green-400', title: 'REST API' },
+  'Spring Boot': { icon: <Server className="w-5 h-5" />, color: 'text-green-500', title: 'Spring Boot' },
+  'Django': {icon:<SiDjango className="w-5 h-5" />, color: 'text-blue-500', title: 'Django' },
 };
 // Data object containing all portfolio information
 const portfolioData = {
@@ -71,8 +82,8 @@ const portfolioData = {
   skills: {
     languages: ["C++", "C#", "JavaScript", "Python", "SQL", "HTML", "CSS"],
     frontend: ["React.js", "Next.js", "jQuery", "Bootstrap", "TypeScript"],
-    backend: [".NET (C#)", "Node.js", "Express.js", "RESTful APIs"],
-    databases: ["MongoDB", "MySQL", "SQL Server"],
+    backend: [".NET (C#)", "Node.js", "Express.js", "Django"],
+    databases: ["MongoDB", "MySQL", "Firebase"],
     tools: ["Azure", "Docker", "Linux", "Firebase", "Tableau", "Power BI", "Git"]
   },
   
@@ -82,8 +93,8 @@ const portfolioData = {
       position: "Software Developer",
       duration: "Jan 2025 – Present",
       location: "Gurugram, Haryana",
-      description: "Developed backend operations with .NET (C#), React, SQL, and Azure. Implemented automated PDF & Word generation, reducing manual effort by 40% and contributing ₹2 lakhs increase in revenue.",
-      technologies: [".NET (C#)", "React.js", "MySQL", "AWS"]
+      description: "Developed backend operations with .NET (C#), React, SQL, and AWS. Implemented automated PDF & Word generation, reducing manual effort by 40% and contributing ₹2 lakhs increase in revenue.",
+      technologies: [".NET (C#)", "React.js", "MySQL", "AWS-S3"]
     },
     {
       company: "Valtorus Tech Pvt Ltd",
